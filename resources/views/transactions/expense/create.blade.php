@@ -11,7 +11,7 @@
                                 <h3 class="mb-0">New Expense</h3>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="{{ route('transactions.type', ['type' => 'expense']) }}" class="btn btn-sm btn-primary">Back to List</a>
+                                <a href="{{ route('transactions.type', ['type' => 'expense']) }}" class="btn btn-sm btn-primary">Volver a la lista</a>
                             </div>
                         </div>
                     </div>
@@ -23,7 +23,7 @@
                             <h6 class="heading-small text-muted mb-4">Expense Information</h6>
                             <div class="pl-lg-4">
                                 <div class="form-group{{ $errors->has('title') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-title">Name</label>
+                                    <label class="form-control-label" for="input-title">Nombre</label>
                                     <input type="text" name="title" id="input-title" class="form-control form-control-alternative{{ $errors->has('title') ? ' is-invalid' : '' }}" placeholder="Title" value="{{ old('title') }}" required autofocus>
                                     @include('alerts.feedback', ['field' => 'title'])
                                 </div>
@@ -57,7 +57,7 @@
                                 </div>
 
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-success mt-4">Save</button>
+                                    <button type="submit" class="btn btn-success mt-4">Guardar</button>
                                 </div>
                             </div>
                         </form>

@@ -20,8 +20,8 @@
                 <div class="card-body">
                     <table class="table">
                         <thead class=" text-primary">
-                            <th>Date</th>
-                            <th>Title</th>
+                            <th>Fecha</th>
+                            <th>Titulos</th>
                             <th>Sender Method</th>
                             <th>Receiver Method</th>
                             <th>Reference</th>

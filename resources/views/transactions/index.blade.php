@@ -7,7 +7,7 @@
                 <div class="card-header">
                 <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Transactions</h4>
+                            <h4 class="card-title">Transacciones</h4>
                         </div>
                         <div class="col-4 text-right">
                             <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#transactionModal">
@@ -22,14 +22,14 @@
                     <div class="">
                         <table class="table tablesorter " id="">
                             <thead class=" text-primary">
-                                <th>Date</th>
+                                <th>Fecha</th>
                                 <th>Type</th>
-                                <th>Title</th>
+                                <th>Titulos</th>
                                 <th>Method</th>
                                 <th>Amount</th>
                                 <th>Reference</th>
-                                <th>Client</th>
-                                <th>Provider</th>
+                                <th>Cliente</th>
+                                <th>Proveedor</th>
                                 <th>Transfer</th>
                                 <th></th>
                             </thead>

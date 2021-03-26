@@ -20,9 +20,9 @@
                         <table class="table">
                             <thead>
                                 <th>Period</th>
-                                <th>Transactions</th>
+                                <th>Transacciones</th>
                                 <th>Income</th>
-                                <th>Expenses</th>
+                                <th>Gastos</th>
                                 <th>Payments</th>
                                 <th>Cash Balance</th>
                                 <th>Total balance</th>
@@ -65,9 +65,9 @@
                     <div class="table-full-width table-responsive">
                         <table class="table">
                             <thead>
-                                <th>Client</th>
-                                <th>Purchases</th>
-                                <th>Transactions</th>
+                                <th>Cliente</th>
+                                <th>Compras</th>
+                                <th>Transacciones</th>
                                 <th>Balance</th>
                                 <th></th>
                             </thead>
@@ -162,12 +162,12 @@
                 <table class="table">
                     <thead>
                         <th>Period</th>
-                        <th>Sales</th>
+                        <th>Ventas</th>
                         <th>Clients</th>
                         <th>Total Stock</th>
                         <th data-toggle="tooltip" data-placement="bottom" title="Promedio de ingresos por cada venta">Average C / V</th>
                         <th>Billed Amount</th>
-                        <th>To Finalize</th>
+                        <th>Para finalizar</th>
                     </thead>
                     <tbody>
                         @foreach ($salesperiods as $period => $data)

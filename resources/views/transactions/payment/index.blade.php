@@ -20,9 +20,9 @@
                     <div class="">
                         <table class="table tablesorter " id="">
                             <thead class=" text-primary">
-                                <th scope="col">Date</th>
-                                <th scope="col">Provider</th>
-                                <th scope="col">Title</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Proveedor</th>
+                                <th scope="col">Titulos</th>
                                 <th scope="col">Method</th>
                                 <th scope="col">Amount</th>
                                 <th scope="col">Reference</th>

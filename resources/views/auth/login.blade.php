@@ -1,4 +1,4 @@
-@extends('layouts.app', ['class' => 'login-page', 'page' => 'Laravel Inventory', 'contentClass' => 'login-page', 'section' => 'auth'])
+@extends('layouts.app', ['class' => 'login-page', 'page' => 'Kolor JDM', 'contentClass' => 'login-page', 'section' => 'auth'])
 
 @section('content')
     <div class="col-lg-4 col-md-6 ml-auto mr-auto">
@@ -7,8 +7,11 @@
 
             <div class="card card-login card-white">
                 <div class="card-header">
-                    <img src="{{ asset('assets') }}/img/card-primary.png" alt="">
-                    <h1 class="card-title">Login</h1>
+                    
+                    <img src="{{ asset('assets/img/emilyz.jpg')}}" alt="">
+                    <!--<img src="{{ asset('assets') }}/img/card-primary.png" alt=""> -->
+                    <!--<h1 class="card-title">Inicio de Sesión</h1> -->
+                    <h1 class="card-title"><br><br></h1>
                 </div>
                 <div class="card-body">
                     <div class="input-group{{ $errors->has('email') ? ' has-danger' : '' }}">
@@ -31,17 +34,17 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button type="submit" href="" class="btn btn-primary btn-lg btn-block mb-3">Log in</button>
-                    <div class="pull-left">
+                    <button type="submit" href="" class="btn btn-primary btn-lg btn-block mb-3">Inicio de Sesión</button>
+                    {{--<div class="pull-left">
                         <h6>
-                            <a href="{{ route('register') }}" class="link footer-link">Create Account</a>
+                            <a href="{{ route('register') }}" class="link footer-link">Registrar usuario</a>
                         </h6>
                     </div>
-                    {{-- <div class="pull-right">
+                    <div class="pull-right">
                         <h6>
                             <a href="{{ route('password.request') }}" class="link footer-link">I forgot the passwod</a>
                         </h6>
-                    </div> --}}
+                    </div> --}} 
                 </div>
             </div>
         </form>

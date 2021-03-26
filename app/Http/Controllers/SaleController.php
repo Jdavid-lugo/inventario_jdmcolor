@@ -56,7 +56,7 @@ class SaleController extends Controller
         
         return redirect()
             ->route('sales.show', ['sale' => $sale->id])
-            ->withStatus('Sale registered successfully, you can start registering products and transactions.');
+            ->withStatus('Venta registrada,  por favor agregar los productos. ');
     }
 
     /**
@@ -123,7 +123,7 @@ class SaleController extends Controller
 
         return redirect()
             ->route('sales.show', ['sale' => $sale])
-            ->withStatus('Product successfully registered.');
+            ->withStatus('Producto asignado.');
     }
 
     public function editproduct(Sale $sale, SoldProduct $soldproduct)

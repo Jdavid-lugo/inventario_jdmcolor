@@ -11,7 +11,7 @@
                                 <h3 class="mb-0">Edit Income</h3>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="{{ route('transactions.type', ['type' => 'income']) }}" class="btn btn-sm btn-primary">Back to List</a>
+                                <a href="{{ route('transactions.type', ['type' => 'income']) }}" class="btn btn-sm btn-primary">Volver a la lista</a>
                             </div>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
                             <h6 class="heading-small text-muted mb-4">Información del Ingreso</h6>
                             <div class="pl-lg-4">
                                 <div class="form-group{{ $errors->has('title') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-title">Title</label>
+                                    <label class="form-control-label" for="input-title">Titulos</label>
                                     <input type="text" name="title" id="input-title" class="form-control form-control-alternative{{ $errors->has('title') ? ' is-invalid' : '' }}" placeholder="Title" value="{{ old('title', $transaction->title) }}" required autofocus>
                                     @include('alerts.feedback', ['field' => 'title'])
                                 </div>
@@ -52,12 +52,12 @@
 
                                 <div class="form-group{{ $errors->has('reference') ? ' has-danger' : '' }}">
                                     <label class="form-control-label" for="input-reference">Reference</label>
-                                    <input type="text" name="reference" id="input-reference" class="form-control form-control-alternative{{ $errors->has('reference') ? ' is-invalid' : '' }}" placeholder="Description" value="{{ old('reference', $transaction->reference) }}">
+                                    <input type="text" name="reference" id="input-reference" class="form-control form-control-alternative{{ $errors->has('reference') ? ' is-invalid' : '' }}" placeholder="Descripción" value="{{ old('reference', $transaction->reference) }}">
                                     @include('alerts.feedback', ['field' => 'reference'])
                                 </div>
 
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-success mt-4">Save</button>
+                                    <button type="submit" class="btn btn-success mt-4">Guardar</button>
                                 </div>
                             </div>
                         </form>

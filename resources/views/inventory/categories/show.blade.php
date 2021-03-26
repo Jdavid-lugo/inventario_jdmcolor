@@ -1,21 +1,21 @@
-@extends('layouts.app', ['page' => 'Category Information', 'pageSlug' => 'categories', 'section' => 'inventory'])
+@extends('layouts.app', ['page' => 'Categorías', 'pageSlug' => 'categories', 'section' => 'inventory'])
 
 @section('content')
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Category Information</h4>
+                    <h4 class="card-title">Información</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>products</th>
-                            <th>Stocks</th>
-                            <th>Stocks Faulty</th>
-                            <th>Average Price</th>
+                            <th>Nombre</th>
+                            <th>Productos</th>
+                            <th>Stock</th>
+                            <th>Stocks Defectuoso</th>
+                            <th>Precio Promedio</th>
                         </thead>
                         <tbody>
                             <tr>
@@ -36,19 +36,19 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">products: {{ $products->count() }}</h4>
+                    <h4 class="card-title">Productos: {{ $products->count() }}</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Name</th>
+                            <th>Nombre</th>
                             <th>Stock</th>
-                            <th>Defective Stock</th>
-                            <th>Base price</th>
-                            <th>Average Price</th>
-                            <th>Total sales</th>
-                            <th>Income Produced</th>
+                            <th>Stock Defectuoso</th>
+                            <th>Precio Base</th>
+                            <th>Precio Promedio</th>
+                            <th>Venta Total</th>
+                            <th>Ingresos generado</th>
                             <th></th>
                         </thead>
                         <tbody>
@@ -63,7 +63,7 @@
                                     <td>{{ $product->solds->sum('qty') }}</td>
                                     <td>{{ format_money($product->solds->sum('total_amount')) }}</td>
                                     <td class="td-actions text-right">
-                                        <a href="{{ route('products.show', $product) }}" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="More Details">
+                                        <a href="{{ route('products.show', $product) }}" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Mas detalles">
                                             <i class="tim-icons icon-zoom-split"></i>
                                         </a>
                                     </td>

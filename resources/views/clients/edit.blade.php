@@ -11,7 +11,7 @@
                                 <h3 class="mb-0">{{ __('Client Management') }}</h3>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="{{ route('clients.index') }}" class="btn btn-sm btn-primary">{{ __('Back to List') }}</a>
+                                <a href="{{ route('clients.index') }}" class="btn btn-sm btn-primary">{{ __('Volver a la lista') }}</a>
                             </div>
                         </div>
                     </div>
@@ -23,8 +23,8 @@
                             <h6 class="heading-small text-muted mb-4">{{ __('Client information') }}</h6>
                             <div class="pl-lg-4">
                                 <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-name">{{ __('Name') }}</label>
-                                    <input type="text" name="name" id="input-name" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Name') }}" value="{{ old('name', $client->name) }}" required autofocus>
+                                    <label class="form-control-label" for="input-name">{{ __('Nombres') }}</label>
+                                    <input type="text" name="name" id="input-name" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Nombres') }}" value="{{ old('name', $client->name) }}" required autofocus>
                                     @include('alerts.feedback', ['field' => 'name'])
                                 </div>
                                 <div class="row">
@@ -60,7 +60,7 @@
                                 </div>
 
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-success mt-4">{{ __('Save') }}</button>
+                                    <button type="submit" class="btn btn-success mt-4">{{ __('Guardar') }}</button>
                                 </div>
                             </div>
                         </form>

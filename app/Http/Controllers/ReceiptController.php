@@ -50,7 +50,7 @@ class ReceiptController extends Controller
 
         return redirect()
             ->route('receipts.show', $receipt)
-            ->withStatus('Receipt registered successfully, you can start adding the products belonging to it.');
+            ->withStatus('Recepción registrada, puede agregar los productos.');
     }
 
     /**
@@ -76,7 +76,7 @@ class ReceiptController extends Controller
 
         return redirect()
             ->route('receipts.index')
-            ->withStatus('Receipt successfully removed.');
+            ->withStatus('Recepción eliminada');
     }
 
     /**
@@ -96,7 +96,7 @@ class ReceiptController extends Controller
             $receivedproduct->product->save();
         }
 
-        return back()->withStatus('Receipt successfully completed.');
+        return back()->withStatus('Recepcion Registrada correctamente.');
     }
 
     /**
@@ -125,7 +125,7 @@ class ReceiptController extends Controller
 
         return redirect()
             ->route('receipts.show', $receipt)
-            ->withStatus('Product added successfully.');
+            ->withStatus('Producto agregado.');
     }
 
     /**

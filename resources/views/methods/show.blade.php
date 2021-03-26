@@ -5,19 +5,19 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Method information</h4>
+                    <h4 class="card-title">Información del metodo de pago</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Transactions</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Transacciones</th>
                             <th>Daily Balance</th>
                             <th>Weekly Balance</th>
                             <th>Quarterly Balance</th>
-                            <th>Monthly Balance</th>
+                            <th>Balance mensual</th>
                             <th>Annual balance</th>
                         </thead>
                         <tbody>
@@ -48,9 +48,9 @@
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Date</th>
+                            <th>Fecha</th>
                             <th>Type</th>
-                            <th>Title</th>
+                            <th>Titulos</th>
                             <th>Amount</th>
                             <th>Reference</th>
                         </thead>
@@ -65,7 +65,7 @@
                                     <td>{{ $transaction->reference }}</td>
                                     <td class="td-actions text-right">
                                         @if ($transaction->sale_id)
-                                            <a href="{{ route('sales.show', $transaction->sale) }}" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="More Details">
+                                            <a href="{{ route('sales.show', $transaction->sale) }}" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Mas detalles">
                                                 <i class="tim-icons icon-zoom-split"></i>
                                             </a>
                                         @elseif ($transaction->transfer_id)

@@ -11,7 +11,7 @@
                                 <h3 class="mb-0">Exit Expense</h3>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="{{ route('transactions.type', ['type' => 'expense']) }}" class="btn btn-sm btn-primary">Back to List</a>
+                                <a href="{{ route('transactions.type', ['type' => 'expense']) }}" class="btn btn-sm btn-primary">Volver a la lista</a>
                             </div>
                         </div>
                     </div>
@@ -24,13 +24,13 @@
                             <h6 class="heading-small text-muted mb-4">Expense Information</h6>
                             <div class="pl-lg-4">
                                 <div class="form-group{{ $errors->has('title') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-title">Title</label>
+                                    <label class="form-control-label" for="input-title">Titulos</label>
                                     <input type="text" name="title" id="input-title" class="form-control form-control-alternative{{ $errors->has('title') ? ' is-invalid' : '' }}" placeholder="{{ __('Title') }}" value="{{ old('title', $transaction->title) }}" required autofocus>
                                     @include('alerts.feedback', ['field' => 'title'])
                                 </div>
 
                                 <div class="form-group{{ $errors->has('payment_method_id') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-method">Categories</label>
+                                    <label class="form-control-label" for="input-method">Categorías</label>
                                     <select name="payment_method_id" id="input-method" class="form-select form-control-alternative{{ $errors->has('payment_method_id') ? ' is-invalid' : '' }}" required>
                                         @foreach ($payment_methods as $payment_method)
                                             @if($payment_method['id'] == old('payment_method_id') or $payment_method['id'] == $transaction->payment_method_id)
@@ -57,7 +57,7 @@
 
 
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-success mt-4">Save</button>
+                                    <button type="submit" class="btn btn-success mt-4">Guardar</button>
                                 </div>
                             </div>
                         </form>

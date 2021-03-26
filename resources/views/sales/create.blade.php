@@ -9,7 +9,7 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-8">
-                                <h3 class="mb-0">Register Sale</h3>
+                                <h3 class="mb-0">Registrar Ventas</h3>
                             </div>
                             <div class="col-4 text-right">
                                 <a href="{{ route('sales.index') }}" class="btn btn-sm btn-primary">Back to list</a>
@@ -24,7 +24,7 @@
                             <div class="pl-lg-4">
                                 <div class="form-group{{ $errors->has('client_id') ? ' has-danger' : '' }}">
                                     <input type="hidden" name="user_id" value="{{ Auth::id() }}">
-                                    <label class="form-control-label" for="input-name">Client</label>
+                                    <label class="form-control-label" for="input-name">Cliente</label>
                                     <select name="client_id" id="input-category" class="form-select form-control-alternative{{ $errors->has('client') ? ' is-invalid' : '' }}" required>
                                         @foreach ($clients as $client)
                                             @if($client['id'] == old('client'))

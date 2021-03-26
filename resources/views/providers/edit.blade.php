@@ -1,4 +1,4 @@
-@extends('layouts.app', ['page' => 'Edit Provider', 'pageSlug' => 'providers', 'section' => 'providers'])
+@extends('layouts.app', ['page' => 'Editar Proveedor', 'pageSlug' => 'providers', 'section' => 'providers'])
 
 @section('content')
     <div class="container-fluid mt--7">
@@ -8,10 +8,10 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-8">
-                                <h3 class="mb-0">Edit Provider</h3>
+                                <h3 class="mb-0">Editar proveedor</h3>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="{{ route('providers.index') }}" class="btn btn-sm btn-primary">Back to List</a>
+                                <a href="{{ route('providers.index') }}" class="btn btn-sm btn-primary">Volver a la lista</a>
                             </div>
                         </div>
                     </div>
@@ -20,16 +20,16 @@
                             @csrf
                             @method('put')
 
-                            <h6 class="heading-small text-muted mb-4">Provider Information</h6>
+                            <h6 class="heading-small text-muted mb-4">Información</h6>
                             <div class="pl-lg-4">
                                 <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-name">Name</label>
+                                    <label class="form-control-label" for="input-name">Nombre</label>
                                     <input type="text" name="name" id="input-name" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="Name" value="{{ old('name', $provider->name) }}" required autofocus>
                                     @include('alerts.feedback', ['field' => 'name'])
                                 </div>
                                 <div class="form-group{{ $errors->has('description') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-description">Description</label>
-                                    <input type="text" name="description" id="input-description" class="form-control form-control-alternative{{ $errors->has('description') ? ' is-invalid' : '' }}" placeholder="Description" value="{{ old('description', $provider->description) }}" required>
+                                    <label class="form-control-label" for="input-description">Descripción</label>
+                                    <input type="text" name="description" id="input-description" class="form-control form-control-alternative{{ $errors->has('description') ? ' is-invalid' : '' }}" placeholder="Descripción" value="{{ old('description', $provider->description) }}" required>
                                     @include('alerts.feedback', ['field' => 'description'])
                                 </div>
                                 <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
@@ -38,18 +38,18 @@
                                     @include('alerts.feedback', ['field' => 'email'])
                                 </div>
                                 <div class="form-group{{ $errors->has('phone') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-phone">Telephone</label>
+                                    <label class="form-control-label" for="input-phone">Telefono</label>
                                     <input type="text" name="phone" id="input-phone" class="form-control form-control-alternative{{ $errors->has('phone') ? ' is-invalid' : '' }}" placeholder="Telephone" value="{{ old('emphoneail', $provider->phone) }}" required>
                                     @include('alerts.feedback', ['field' => 'phone'])
                                 </div>
                                 <div class="form-group{{ $errors->has('paymentinfo') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-paymentinfo">Payment information</label>
+                                    <label class="form-control-label" for="input-paymentinfo">Informacion del pago</label>
                                     <textarea name="paymentinfo" id="input-paymentinfo" class="form-control form-control-alternative{{ $errors->has('paymentinfo') ? ' is-invalid' : '' }}" placeholder="Payment information" required>{{ old('paymentinfo', $provider->paymentinfo) }}</textarea>
                                     @include('alerts.feedback', ['field' => 'paymentinfo'])
                                 </div>
 
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-success mt-4">Save</button>
+                                    <button type="submit" class="btn btn-success mt-4">Guardar</button>
                                 </div>
                             </div>
                         </form>

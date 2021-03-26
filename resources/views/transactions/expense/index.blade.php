@@ -7,7 +7,7 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
-                            <h4 class="card-title">Expenses</h4>
+                            <h4 class="card-title">Gastos</h4>
                         </div>
                         <div class="col-4 text-right">
                             <a href="{{ route('transactions.create', ['type' => 'expense']) }}" class="btn btn-sm btn-primary">Register Expense</a>
@@ -20,8 +20,8 @@
                     <div class="">
                         <table class="table tablesorter " id="">
                             <thead class=" text-primary">
-                                <th scope="col">Date</th>
-                                <th scope="col">Title</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Titulos</th>
                                 <th scope="col">Method</th>
                                 <th scope="col">Amount</th>
                                 <th scope="col">Reference</th>
@@ -37,7 +37,7 @@
                                         <td>{{ $transaction->reference }}</td>
                                         <td class="td-actions text-right">
                                             @if ($transaction->sale_id)
-                                                <a href="{{ route('sales.show', $transaction->sale_id) }}" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="More Details">
+                                                <a href="{{ route('sales.show', $transaction->sale_id) }}" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Mas detalles">
                                                     <i class="tim-icons icon-zoom-split"></i>
                                                 </a>
                                             @else

@@ -18,12 +18,12 @@
                 <div class="">
                     <table class="table">
                         <thead>
-                            <th>Date</th>
-                            <th>Title</th>
-                            <th>Provider</th>
-                            <th>products</th>
+                            <th>Fecha</th>
+                            <th>Titulos</th>
+                            <th>Proveedor</th>
+                            <th>Productos</th>
                             <th>Stock</th>
-                            <th>Defective Stock</th>
+                            <th>Stock defetuoso</th>
                             <th>Status</th>
                             <th></th>
                         </thead>
@@ -44,14 +44,14 @@
                                     <td>{{ $receipt->products->sum('stock_defective') }}</td>
                                     <td>
                                         @if($receipt->finalized_at)
-                                            FINALIZED
+                                            FInalizado
                                         @else
-                                            <span style="color:red; font-weight:bold;">TO FINALIZE</span>
+                                            <span style="color:red; font-weight:bold;">Para finalizar</span>
                                         @endif
                                     </td>
                                     <td class="td-actions text-right">
                                         @if($receipt->finalized_at)
-                                            <a href="{{ route('receipts.show', ['receipt' => $receipt]) }}" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Ver Receipt">
+                                            <a href="{{ route('receipts.show', ['receipt' => $receipt]) }}" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Ver Recepciones">
                                                 <i class="tim-icons icon-zoom-split"></i>
                                             </a>
                                         @else

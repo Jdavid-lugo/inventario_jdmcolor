@@ -45,7 +45,7 @@ class ProductController extends Controller
 
         return redirect()
             ->route('products.index')
-            ->withStatus('Product successfully registered.');
+            ->withStatus('Producto asignado.');
     }
 
     /**

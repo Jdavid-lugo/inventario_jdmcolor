@@ -1,4 +1,4 @@
-@extends('layouts.app', ['class' => 'register-page', 'page' => 'Laravel Inventory', 'contentClass' => 'register-page', 'section' => 'auth'])
+@extends('layouts.app', ['class' => 'register-page', 'page' => 'Laravel Inventario', 'contentClass' => 'register-page', 'section' => 'auth'])
 
 @section('content')
     <div class="row">
@@ -6,7 +6,7 @@
             <div class="card card-register card-white">
                 <div class="card-header">
                     <img class="card-img" src="{{ asset('assets') }}/img/card-primary.png" alt="Card image">
-                    <h4 class="card-title">Register</h4>
+                    <h4 class="card-title">Registrar</h4>
                 </div>
                 <form class="form" method="post" action="{{ route('register') }}">
                     @csrf

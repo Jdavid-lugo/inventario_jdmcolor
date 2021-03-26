@@ -1,23 +1,23 @@
-@extends('layouts.app', ['page' => 'Provider Information', 'pageSlug' => 'providers', 'section' => 'providers'])
+@extends('layouts.app', ['page' => 'Información del proveedor', 'pageSlug' => 'providers', 'section' => 'providers'])
 
 @section('content')
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Provider Information</h4>
+                    <h4 class="card-title">Información</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>Description</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
                             <th>Email</th>
-                            <th>Telephone</th>
-                            <th>Payment information</th>
+                            <th>Telefono</th>
+                            {{-- <th>Payment information</th>
                             <th>Payments Made</th>
-                            <th>Total Payment</th>
+                            <th>Total Payment</th> --}}
                         </thead>
                         <tbody>
                             <tr>
@@ -26,9 +26,9 @@
                                 <td>{{ $provider->description }}</td>
                                 <td>{{ $provider->email }}</td>
                                 <td>{{ $provider->phone }}</td>
-                                <td style="max-width: 175px">{{ $provider->paymentinfo }}</td>
+                                {{-- <td style="max-width: 175px">{{ $provider->paymentinfo }}</td>
                                 <td>{{ $provider->transactions->count() }}</td>
-                                <td>{{ format_money(abs($provider->transactions->sum('amount'))) }}</td>
+                                <td>{{ format_money(abs($provider->transactions->sum('amount'))) }}</td> --}}
                             </tr>
                         </tbody>
                     </table>
@@ -36,7 +36,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
@@ -45,9 +45,9 @@
                 <div class="card-body">
                     <table class="table">
                         <thead>
-                            <th>Date</th>
+                            <th>Fecha</th>
                             <th>ID</th>
-                            <th>Title</th>
+                            <th>Titulos</th>
                             <th>Method</th>
                             <th>Amount</th>
                             <th>Reference</th>
@@ -68,22 +68,22 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Latest Receipts</h4>
+                    <h4 class="card-title">Ultimas recepciones</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
-                            <th>Date</th>
+                            <th>Fecha</th>
                             <th>ID</th>
-                            <th>Title</th>
-                            <th>products</th>
+                            <th>Titulos</th>
+                            <th>Productos</th>
                             <th>Stock</th>
-                            <th>Defective Stock</th>
+                            <th>Stock defetuoso</th>
                             <th>Total Stock</th>
                             <th></th>
                         </thead>
@@ -98,7 +98,7 @@
                                     <td>{{ $receipt->products->sum('stock_defective') }}</td>
                                     <td>{{ $receipt->products->sum('stock') + $receipt->products->sum('stock_defective') }}</td>
                                     <td class="td-actions text-right">
-                                        <a href="{{ route('receipts.show', $receipt) }}" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Ver Receipt">
+                                        <a href="{{ route('receipts.show', $receipt) }}" class="btn btn-link" data-toggle="tooltip" data-placement="bottom" title="Ver Recepciones">
                                             <i class="tim-icons icon-zoom-split"></i>
                                         </a>
                                     </td>
