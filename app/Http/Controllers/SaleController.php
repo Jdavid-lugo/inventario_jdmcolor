@@ -82,7 +82,7 @@ class SaleController extends Controller
 
         return redirect()
             ->route('sales.index')
-            ->withStatus('The sale record has been successfully deleted.');
+            ->withStatus('La venta sue eliminada correctamente');
     }
 
     public function finalize(Sale $sale)
