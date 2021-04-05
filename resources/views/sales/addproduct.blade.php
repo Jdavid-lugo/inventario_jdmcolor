@@ -35,7 +35,7 @@
                                 </div>
 
                                 <div class="form-group{{ $errors->has('product_id') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-price">Price per Unit</label>
+                                    <label class="form-control-label" for="input-price">Precio por producto</label>
                                     <input type="number" name="price" id="input-price" step=".01" class="form-control form-control-alternative{{ $errors->has('product_id') ? ' is-invalid' : '' }}" value="0" required>
                                     @include('alerts.feedback', ['field' => 'product_id'])
                                 </div>
