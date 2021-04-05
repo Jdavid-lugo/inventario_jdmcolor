@@ -48,7 +48,7 @@
                                 </div>
 
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-success mt-4">Continue</button>
+                                    <button type="submit" class="btn btn-success mt-4">Continuar</button>
                                 </div>
                             </div>
                         </form>

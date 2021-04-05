@@ -12,7 +12,7 @@
                                 <h3 class="mb-0">Registrar Ventas</h3>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="{{ route('sales.index') }}" class="btn btn-sm btn-primary">Back to list</a>
+                                <a href="{{ route('sales.index') }}" class="btn btn-sm btn-primary">Volver</a>
                             </div>
                         </div>
                     </div>
@@ -20,7 +20,7 @@
                         <form method="post" action="{{ route('sales.store') }}" autocomplete="off">
                             @csrf
 
-                            <h6 class="heading-small text-muted mb-4">Customer information</h6>
+                            <h6 class="heading-small text-muted mb-4">Informacion del Cliente</h6>
                             <div class="pl-lg-4">
                                 <div class="form-group{{ $errors->has('client_id') ? ' has-danger' : '' }}">
                                     <input type="hidden" name="user_id" value="{{ Auth::id() }}">
@@ -37,7 +37,7 @@
                                     @include('alerts.feedback', ['field' => 'client_id'])
                                 </div>
 
-                                <button type="submit" class="btn btn-success mt-4">Continue</button>
+                                <button type="submit" class="btn btn-success mt-4">Continuar</button>
                             </div>
                         </form>
                     </div>
