@@ -1,4 +1,4 @@
-@extends('layouts.app', ['page' => 'New Receipt', 'pageSlug' => 'receipts', 'section' => 'inventory'])
+@extends('layouts.app', ['page' => 'Nueva Recepción', 'pageSlug' => 'receipts', 'section' => 'inventory'])
 
 @section('content')
     <div class="container-fluid mt--7">
@@ -9,7 +9,7 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-8">
-                                <h3 class="mb-0">New Receipt</h3>
+                                <h3 class="mb-0">Nueva Recepción</h3>
                             </div>
                             <div class="col-4 text-right">
                                 <a href="{{ route('receipts.index') }}" class="btn btn-sm btn-primary">Volver a la lista</a>

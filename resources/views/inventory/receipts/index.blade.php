@@ -1,4 +1,4 @@
-@extends('layouts.app', ['page' => 'Receipts', 'pageSlug' => 'receipts', 'section' => 'inventory'])
+@extends('layouts.app', ['page' => 'Recepciones', 'pageSlug' => 'receipts', 'section' => 'inventory'])
 
 @section('content')
     @include('alerts.success')
@@ -7,10 +7,10 @@
             <div class="card-header">
                 <div class="row">
                     <div class="col-8">
-                        <h4 class="card-title">Receipts</h4>
+                        <h4 class="card-title">Recepciones</h4>
                     </div>
                     <div class="col-4 text-right">
-                        <a href="{{ route('receipts.create') }}" class="btn btn-sm btn-primary">New Receipt</a>
+                        <a href="{{ route('receipts.create') }}" class="btn btn-sm btn-primary">Nueva Recepción</a>
                     </div>
                 </div>
             </div>
