@@ -20,7 +20,7 @@
                         <form method="post" action="{{ route('receipts.store') }}" autocomplete="off">
                             @csrf
 
-                            <h6 class="heading-small text-muted mb-4">Receipt Information</h6>
+                            <h6 class="heading-small text-muted mb-4">Información de recepción</h6>
                             <div class="pl-lg-4">
                                 <input type="hidden" name="user_id" value="{{ Auth::id() }}">
 
