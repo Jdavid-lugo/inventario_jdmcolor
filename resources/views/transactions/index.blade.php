@@ -1,4 +1,4 @@
-@extends('layouts.app', ['page' => 'Transactions', 'pageSlug' => 'transactions', 'section' => 'transactions'])
+@extends('layouts.app', ['page' => 'Transactiones', 'pageSlug' => 'transactions', 'section' => 'transactions'])
 
 @section('content')
     <div class="row">
@@ -23,7 +23,7 @@
                         <table class="table tablesorter " id="">
                             <thead class=" text-primary">
                                 <th>Fecha</th>
-                                <th>Type</th>
+                                <th>Tipo</th>
                                 <th>Titulos</th>
                                 <th>Method</th>
                                 <th>Amount</th>

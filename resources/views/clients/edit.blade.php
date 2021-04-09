@@ -42,8 +42,8 @@
                                         </select>
                                     </div>
                                     <div class="col">
-                                        <label class="form-control-label" for="input-document_id">{{ __('Document Number') }}</label>
-                                        <input type="text" name="document_id" id="input-document_id" class="form-control form-control-alternative{{ $errors->has('document_id') ? ' is-invalid' : '' }}" placeholder="{{ __('Document Number') }}" value="{{ old('document_id', $client->document_id) }}" required>
+                                        <label class="form-control-label" for="input-document_id">{{ __('Numero de documento') }}</label>
+                                        <input type="text" name="document_id" id="input-document_id" class="form-control form-control-alternative{{ $errors->has('document_id') ? ' is-invalid' : '' }}" placeholder="{{ __('Numero de documento') }}" value="{{ old('document_id', $client->document_id) }}" required>
                                         @include('alerts.feedback', ['field' => 'document_id'])
 
                                     </div>

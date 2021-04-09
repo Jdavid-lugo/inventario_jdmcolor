@@ -49,7 +49,7 @@
                         <thead>
                             <th>ID</th>
                             <th>Fecha</th>
-                            <th>Type</th>
+                            <th>Tipo</th>
                             <th>Titulos</th>
                             <th>Amount</th>
                             <th>Reference</th>
