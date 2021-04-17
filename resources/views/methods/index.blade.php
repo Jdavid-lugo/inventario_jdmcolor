@@ -20,7 +20,7 @@
                     <div class="">
                         <table class="table tablesorter " id="">
                             <thead class=" text-primary">
-                                <th scope="col">Method</th>
+                                <th scope="col">Metodo</th>
                                 <th scope="col">Descripción</th>
                                 <th scope="col">Transacciones mensuales</th>
                                 <th scope="col">Balance mensual</th>

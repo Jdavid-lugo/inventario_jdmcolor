@@ -66,7 +66,7 @@
                         <thead>
                             <th>ID</th>
                             <th>Fecha</th>
-                            <th>Method</th>
+                            <th>Metodo</th>
                             <th>Amount</th>
                         </thead>
                         <tbody>

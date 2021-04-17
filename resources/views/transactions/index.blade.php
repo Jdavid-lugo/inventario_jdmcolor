@@ -25,7 +25,7 @@
                                 <th>Fecha</th>
                                 <th>Tipo</th>
                                 <th>Titulos</th>
-                                <th>Method</th>
+                                <th>Metodo</th>
                                 <th>Amount</th>
                                 <th>Reference</th>
                                 <th>Cliente</th>

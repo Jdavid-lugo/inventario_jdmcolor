@@ -1,4 +1,4 @@
-@extends('layouts.app', ['page' => 'Edit Client', 'pageSlug' => 'clients', 'section' => 'clients'])
+@extends('layouts.app', ['page' => 'Editar cliente', 'pageSlug' => 'clients', 'section' => 'clients'])
 
 @section('content')
     <div class="container-fluid mt--7">
@@ -8,7 +8,7 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-8">
-                                <h3 class="mb-0">{{ __('Client Management') }}</h3>
+                                <h3 class="mb-0">{{ __('Editar cliente') }}</h3>
                             </div>
                             <div class="col-4 text-right">
                                 <a href="{{ route('clients.index') }}" class="btn btn-sm btn-primary">{{ __('Volver a la lista') }}</a>
@@ -54,8 +54,8 @@
                                     @include('alerts.feedback', ['field' => 'email'])
                                 </div>
                                 <div class="form-group{{ $errors->has('phone') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-phone">{{ __('Phone') }}</label>
-                                    <input type="text" name="phone" id="input-phone" class="form-control form-control-alternative{{ $errors->has('phone') ? ' is-invalid' : '' }}" placeholder="{{ __('Phone') }}" value="{{ old('phone', $client->phone) }}" required>
+                                    <label class="form-control-label" for="input-phone">{{ __('Telefono') }}</label>
+                                    <input type="text" name="phone" id="input-phone" class="form-control form-control-alternative{{ $errors->has('phone') ? ' is-invalid' : '' }}" placeholder="{{ __('Telefono') }}" value="{{ old('phone', $client->phone) }}" required>
                                     @include('alerts.feedback', ['field' => 'phone'])
                                 </div>
 

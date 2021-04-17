@@ -119,7 +119,7 @@
                     <div class="table-full-width table-responsive">
                         <table class="table">
                             <thead>
-                                <th>Method</th>
+                                <th>Metodo</th>
                                 <th>Transactions {{ $date->year }}</th>
                                 <th>Balance {{ $date->year }}</th>
                                 <th></th>

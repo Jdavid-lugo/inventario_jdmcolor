@@ -23,7 +23,7 @@
                                 <th scope="col">Fecha</th>
                                 <th scope="col">Proveedor</th>
                                 <th scope="col">Titulos</th>
-                                <th scope="col">Method</th>
+                                <th scope="col">Metodo</th>
                                 <th scope="col">Amount</th>
                                 <th scope="col">Reference</th>
                                 <th scope="col"></th>
