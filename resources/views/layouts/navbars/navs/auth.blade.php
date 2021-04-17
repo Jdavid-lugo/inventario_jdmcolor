@@ -60,6 +60,10 @@
                         </li>
                         <li class="dropdown-divider"></li>
                         <li class="nav-link">
+                            <a href="{{ asset('assets/demo/manual_inventario.pdf') }}" class="nav-item dropdown-item">{{ __('Manual de uso') }}</a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="nav-link">
                             <a href="{{ route('logout') }}" class="nav-item dropdown-item" onclick="event.preventDefault();  document.getElementById('logout-form').submit();">{{ __('Cerrar Sesión') }}</a>
                         </li>
                     </ul>
