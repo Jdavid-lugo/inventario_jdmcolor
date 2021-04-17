@@ -177,6 +177,14 @@
                     </ul>
                 </div>
             </li>
+
+            <li @if ($pageSlug == 'manual') class="active " @endif>
+                <a href="{{ asset('assets/demo/manual_inventario.pdf') }}">
+                    <i class="tim-icons icon-help"></i>
+                    <p>Manual de uso</p>
+                </a>
+            </li>
+
         </ul>
     </div>
 </div>
